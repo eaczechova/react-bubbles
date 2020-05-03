@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import { axiosWithAuth } from '../utils/axiosWithAuth';
 
 const Login = (props) => {
@@ -20,21 +19,19 @@ const Login = (props) => {
 		axiosWithAuth()
 			.post('http://localhost:5000/api/login', credentials)
 			.then((res) => {
-				console.log(credentials);
 				localStorage.setItem('token', res.data.payload);
-				console.log(localStorage.getItem('token'));
 				props.history.push('/colors');
 			})
 			.catch((err) => console.log(err));
 	};
 
 	return (
-		<section>
+		<section className="wrapper">
 			<div>
 				<h1>Welcome to the Bubble App!</h1>
 			</div>
-			<div>
-				<form onSubmit={login}>
+			<div className="form__wrapper">
+				<form className="form__login" onSubmit={login}>
 					<input
 						type="text"
 						name="username"
