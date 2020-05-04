@@ -1,99 +1,185 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 html,
 body,
 #root,
 .App {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .App {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  display: flex;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	display: flex;
 
-  svg {
-    height: 100%;
-  }
+	svg {
+		height: 100%;
+	}
 }
 
 .spacer {
-  height: 100%;
+	height: 100%;
 }
 
 .bubble-wrap {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .colors-wrap {
-  height: 100%;
-  width: 300px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	height: 100%;
+	width: 300px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
-  ul {
-    list-style: none;
-    text-align: start;
+	ul {
+		list-style: none;
+		text-align: start;
 
-    li {
-      cursor: pointer;
-      padding: 6px 0;
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
-  }
+		li {
+			cursor: pointer;
+			padding: 6px 0;
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+		}
+	}
 }
 
 .delete {
-  color: rgb(216, 87, 87);
+	color: rgb(216, 87, 87);
 }
 
 .color-box {
-  height: 16px;
-  width: 16px;
-  border: 1px lightgray solid;
-  margin-right: 36px;
+	height: 16px;
+	width: 16px;
+	border: 1px lightgray solid;
+	margin-right: 36px;
 }
 
 form {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
 
-  legend {
-    padding-left: 40px;
-    font-weight: bold;
-    text-align: left;
-    text-decoration: underline;
-    margin-bottom: 16px;
-  }
+	legend {
+		padding-left: 40px;
+		font-weight: bold;
+		text-align: left;
+		text-decoration: underline;
+		margin-bottom: 16px;
+	}
 
-  label {
-    display: flex;
-    justify-content: space-between;
-    padding: 4px 36px 4px 40px;
-  }
+	label {
+		display: flex;
+		justify-content: space-between;
+		padding: 4px 36px 4px 40px;
+	}
 
-  input {
-    width: 100px;
-  }
+	input {
+		width: 100px;
+	}
 }
 
 .button-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 36px 0 41px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 36px 0 41px;
 
-  button {
-    border: none;
-    background-color: black;
-    color: white;
-    padding: 3px 8px;
-    margin-top: 16px;
-  }
+	button {
+		border: none;
+		background-color: black;
+		color: white;
+		padding: 3px 8px;
+		margin-top: 16px;
+	}
+}
+.wrapper {
+	width: 100%;
+}
+
+.form__wrapper {
+	margin: 0 auto;
+}
+
+.form__login {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	height: 400px;
+	margin: 40px auto;
+	border-radius: 10px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.form__login input {
+	width: 85%;
+	border-radius: 5px;
+	border: 1px solid #dedede;
+	margin: 10px auto;
+	font-size: 14px;
+	padding: 15px;
+	line-height: 20px;
+	font-weight: 600;
+
+	&:first-child {
+		margin-top: 74px;
+	}
+
+	&:focus {
+		outline: none;
+		border: 1px solid #5e54a4;
+	}
+}
+
+button {
+	width: 92%;
+	margin: 20px auto 74px;
+	background-color: #f67a7b;
+	color: #ffffff;
+	border-radius: 5px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 15px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.09);
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.form__color input {
+	margin: 10px auto;
+	padding: 10px;
+	border: none;
+}
+
+.form__color input:focus {
+	outline: none;
+
+	border-bottom: 1px solid #f67a7b;
+}
+
+.form__color button {
+	width: 150px;
+	margin: 20px auto 74px;
+	background-color: transparent;
+	color: #f67a7b;
+	border-radius: 5px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 15px;
+	border: 1px solid #f67a7b;
+	cursor: pointer;
+	box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.09);
+
+	&:focus {
+		outline: none;
+	}
 }
